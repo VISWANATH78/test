@@ -1,0 +1,207 @@
+**Personal Information:**
+- First Name (Required)
+- Last Name (Required)
+- Date of Birth (Required)
+- Gender (Required)
+- Nationality (Required)
+- Aadhar Number(Required)
+
+**Contact Information:**
+- Email Address (Required)
+- Phone Number (Required)
+- Permanent Address (Required)
+- Current Address (if different)
+
+**Academic Information:**
+- Enrollment Year
+- Course/Program Name (Required)
+- Student ID/Registration Number (Required)
+- Department
+- Semester/Year
+- Previous Educational Background (e.g., High School, College)
+
+**Parent/Guardian Information:**
+- Parent/Guardian's Name (Required)
+- Relationship to Student (Required)
+- Phone Number (Required)
+- Email Address
+- Address
+
+**Emergency Contact:**
+- Name (Required)
+- Relationship (Required)
+- Phone Number (Required)
+
+**Additional Information:**
+- Medical Conditions or Allergies
+- Dietary Restrictions
+- Housing Preferences (if applicable)
+- Extracurricular Activities or Interests
+
+**Terms and Conditions:**
+- Agreement to Terms and Conditions (Checkbox)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import React from "react";
+import { Link } from "react-router-dom";
+
+const Home = () => {
+  const sectionStyle = {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    padding: "20px",
+  };
+
+  const titleStyle = {
+    fontSize: "36px",
+    fontWeight: "bold",
+    marginBottom: "20px",
+  };
+
+  const randomMediaStyle = {
+    display: "flex",
+    justifyContent: "center",
+    flexWrap: "wrap",
+  };
+
+  const mediaItemStyle = {
+    margin: "10px",
+    border: "1px solid #ccc",
+    padding: "10px",
+    borderRadius: "8px",
+  };
+
+  return (
+    <div>
+      <section style={sectionStyle}>
+        <h1 style={titleStyle}>Welcome to the Home Page</h1>
+
+        <div style={randomMediaStyle}>
+          <div style={mediaItemStyle}>
+            <img
+              src="path/to/random-image-1.jpg"
+              alt="Random Image 1"
+              width="200"
+              height="150"
+            />
+          </div>
+
+          <div style={mediaItemStyle}>
+            <img
+              src="path/to/random-image-2.jpg"
+              alt="Random Image 2"
+              width="200"
+              height="150"
+            />
+          </div>
+
+          <div style={mediaItemStyle}>
+            <video width="320" height="240" controls>
+              <source src="path/to/random-video-1.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </section>
+
+      <section style={sectionStyle}>
+        <h2>About Us</h2>
+        <p>
+          This is where you can provide information about your website or
+          organization. You can describe your mission, values, and anything
+          else that you'd like your visitors to know.
+        </p>
+      </section>
+
+      <section style={sectionStyle}>
+        <h2>Resources</h2>
+        <p>
+          Here, you can provide links to resources, documents, or any other
+          materials related to your services or organization. You can also
+          provide information on how to access these resources.
+        </p>
+      </section>
+
+      <section style={sectionStyle}>
+        <h2>Services</h2>
+        <p>
+          Describe the services your organization offers. You can provide
+          details about each service, its benefits, and how users can access or
+          use them.
+        </p>
+      </section>
+
+      <section style={sectionStyle}>
+        <h2>Contact Us</h2>
+        <p>
+          Provide contact information and a form for users to get in touch with
+          your organization. You can include an address, phone number, email
+          address, and a contact form.
+        </p>
+      </section>
+    </div>
+  );
+};
+
+export default Home;
+
+
+Please note that the fields are organized into sections as per your original request.
+
+
+ https://cra.link/deployment
